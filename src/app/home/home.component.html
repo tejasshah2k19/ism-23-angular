@@ -1,0 +1,45 @@
+
+
+ <br><Br>
+ <b>Body of Home</b>
+
+ <br><Br>
+
+    {{name | uppercase}}
+    <br>
+    {{name | lowercase}}
+    <br>
+    {{name | uppercase}}
+    <br>
+    {{name | uppercase}}
+    <br>
+    {{name | uppercase}}
+    <br>
+    
+<br><br>
+    {{salary  | number}}
+    
+<br><br>
+{{salary  | currency:'INR'}}
+
+
+<br><br>
+{{today}}
+
+<br><br>
+{{today | date:'longDate'}}
+
+
+<br><br>
+{{today | date:'MMM-dd-YYYY'}}
+
+<br><br>
+{{today | date:'dd-MM-YYYY'}}
+
+<button   ></button>
+<br><BR>
+
+    <ul *ngIf="users">
+
+        <li *ngFor="let u of users">{{u.email}}  <a routerLink="/users/delete/{{u.name}}"> Delete</a> </li>
+    </ul>
